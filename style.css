@@ -20,7 +20,9 @@ header {
 
 .top-inner {
     display: flex;
+    align-items: center;
     justify-content: space-between;
+    flex-wrap: wrap;
 }
 
 .shop {
@@ -110,6 +112,7 @@ nav ul li a:hover {
 
 .flex-feature-mid {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-evenly;
     /* justify-content: center;
     gap: 200px; */
@@ -171,12 +174,14 @@ nav ul li a:hover {
 
 .new-arrival-flex {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-evenly;
     /* justify-content: center;
-     gap: 180px;   */   /* another way to align them*/
+     gap: 180px;   */
+    /* another way to align them*/
     padding-top: 45px;
 }
-    
+
 .outer {
     background-color: black;
     color: #fff;
@@ -186,7 +191,8 @@ nav ul li a:hover {
     align-content: end;
     border-radius: 6px;
     box-shadow: 1px 1px 3px grey;
-    /* margin-left: 150px; */ /* also for align them*/
+    /* margin-left: 150px; */
+    /* also for align them*/
 }
 
 .outer-info p {
@@ -240,14 +246,17 @@ nav ul li a:hover {
 
 .sale-flex {
     display: flex;
+    flex-wrap: wrap;
     /* justify-content: space-around; */
     color: #fff;
     justify-content: center;
-    /* gap: 400px; */
+    /* gap: 400px;  */
 }
 
 .summer {
     background-image: url("img/shopping.png");
+    background-repeat: no-repeat;
+    background-position: center;
     width: 484px;
     height: 255px;
     padding: 20px;
@@ -258,6 +267,7 @@ nav ul li a:hover {
 
 .accessories {
     background-image: url("img/watch.png");
+    background-repeat: no-repeat;
     width: 484px;
     height: 255px;
     padding: 20px;
@@ -274,6 +284,10 @@ nav ul li a:hover {
 .accessories a {
     padding: 9px 24px;
     border-radius: 5px;
+}
+
+.accessories a:visited {
+    color: black;
 }
 
 /*sale  */
